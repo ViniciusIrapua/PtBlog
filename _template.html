@@ -4,13 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- Carrega o css do tema do site-->
+
+    <!-- Carrega o CSS do tema do site -->
     <link rel="stylesheet" href="/css/template.css">
-
-    <!-- Carrega a fonte "Robot" do Google Fonts -->
-
-    <!-- Carrega a biblioteca de ícones -->
 
     <!-- Define o ícone de favoritos -->
     <link rel="shortcut icon" href="/images/logo.png">
@@ -25,36 +21,123 @@
 
         <header>
 
-            <div>
+            <!-- Ao clicar, vai para a página inicial (raiz) -->
+            <a href="/" title="Clique para acessar a página inicial">
                 <img src="/images/logo.png" alt="Logotipo do PyBlog">
                 <h1>
                     PyBlog
-                    <small>Pra entende de cobras</small>
+                    <small>Pra quem entende de cobras</small>
                 </h1>
-            </div>
+            </a>
 
             <!-- formulário de busca -->
-             <form action="/search.html" method="get">
-                <input type="search" name="q" id="headerSearch">
-                <button type="submit"><i class="fa-solid fa-magnifying-glass fa-fw"></i></button>
-             </form>
+            <form action="/search.html" method="get">
+                <input type="search" name="q" id="headerSearch" placeholder="Procurar por...">
+                <button type="submit" title="Clique para iniciar a busca"><i
+                        class="fa-solid fa-magnifying-glass fa-fw"></i></button>
+            </form>
 
         </header>
 
-        <nav></nav>
+        <nav>
+            <a href="/" title="Ir para a página inicial">
+                <i class="fa-solid fa-house fa-fw"></i>
+                <span>Início</span>
+            </a>
+            <a href="/contacts.html" title="Ir para Faça Contato">
+                <i class="fa-solid fa-comments fa-fw"></i>
+                <span>Contatos</span>
+            </a>
+            <a href="/about.html" title="saiba mais sobre agente">
+                <i class="fa-solid fa-circle-info fa-fw"></i>
+                <span>Sobre</span>
+            </a>
+        </nav>
 
         <main>
 
             <article>
-               
+
+                <h2>Título do artigo</h2>
+
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit odit, sint assumenda dolor quis,
+                    nulla eligendi, accusantium earum corporis modi facilis distinctio nisi tempore quidem sequi
+                    asperiores consequatur suscipit non.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus alias reiciendis adipisci facilis
+                    pariatur quod molestiae officia distinctio? Fugiat deserunt dicta eveniet praesentium ullam odit,
+                    tempore minus dignissimos quibusdam provident.</p>
+                <img src="https://picsum.photos/200/200" alt="Imagem aleatória">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus repellat, odio aut magnam
+                    incidunt totam voluptatum reiciendis, laborum nisi modi vero illo quos impedit nihil quaerat
+                    voluptate possimus ipsum laudantium.</p>
+                
             </article>
 
-            <aside></aside>
+            <aside>
+
+                <h3>Veja também</h3>
+                
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                <p>Repellendus asperiores aut voluptas architecto consequuntur.</p>
+                
+            </aside>
 
         </main>
 
-        <footer class="site-title">RODAPÉ</footer>
+        <footer>
 
+            <div class="footer_top">
+
+                <a href="/" title="Ir para a página inicial"><i class="fa-solid fa-house fa-fw"></i></a>
+                <div><i class="fa-regular fa-copyright fa-flip-horizontal"></i> Copyleft 2024 Joca Silva</div>
+                <a href="#wrap" title="ir para o topo desta página"><i class="fa-solid fa-circle-up fa-fw"></i></a>
+
+            </div>
+
+            <div class="footer_botton">
+                
+                <nav>
+                    
+                    <h4>Redes Sociais</h4>
+
+                    <a href="https://facebook.com/">
+                        <i class="fa-brands fa-square-facebook fa-fw"></i>
+                        <span>Facebook</span>
+                    </a>
+                    <a href="https://linkedin.com/">
+                        <i class="fa-brands fa-linkedin fa-fw"></i>
+                        <span>Linkedin</span>
+                    </a>
+                    <a href="https://github.com/">
+                        <i class="fa-brands fa-square-github fa-fw"></i>
+                        <span>GitHub</span>
+                    </a>
+                </nav>
+
+
+                <nav>
+
+                    <h4>Links rápidos</h4>
+
+                    <a href="/policyes.html">
+                        <i class="fa-solid fa-lock fa-fw"></i>
+                        <span>Privacidade</span>
+                    </a>
+                    <a href="/contacts.html">
+                        <i class="fa-solid fa-comments fa-fw"></i>
+                        <span>Contatos</span>
+                    </a>
+                    <a href="/about.html">
+                        <i class="fa-solid fa-circle-info fa-fw"></i>
+                        <span>Sobre</span>
+                    </a>
+                </nav>
+
+            </div>
+
+        </footer>
+        
+        <hr style="margin: 0; border: 1px solid transparent">
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
