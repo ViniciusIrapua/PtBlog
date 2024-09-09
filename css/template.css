@@ -6,7 +6,7 @@
 
 /* Reset para que o CSS seja o mesmo em todos os navegadores modernos */
 
-/* Reset das caixas */
+/* Reset de todas as caixas */
 * {
     box-sizing: border-box;
     outline: none;
@@ -14,11 +14,10 @@
 
 /* Reset de formulários */
 input,
+textarea,
 button {
     font-family: inherit;
     font-size: inherit;
-    padding: .5rem .75rem;
-    border: none;
 }
 
 /* Reset dos links */
@@ -79,10 +78,14 @@ body {
 #wrap>footer,
 #wrap>main>article,
 #wrap>main>aside {
-    margin: .5rem;
+    margin: .5rem .5rem 0 .5rem;
     border-radius: .5rem;
 }
 
+#wrap>main>aside {
+    margin-left: 0;
+    border-radius: .5rem;
+}
 
 /*********************
  ***** Cabeçalho *****
@@ -112,7 +115,7 @@ body {
     font-size: 2.5rem;
     letter-spacing: .25rem;
     text-align: center;
-    /* Experimental */
+    /* Experimental → Alica borda no texto */
     -webkit-text-stroke: 1px rgb(255, 255, 255);
 }
 
@@ -122,7 +125,7 @@ body {
     letter-spacing: normal;
     font-weight: normal;
     color: rgb(255, 255, 255);
-    /* Experimental */
+    /* Experimental → Remove borda no texto  */
     -webkit-text-stroke: 0;
 }
 
@@ -137,13 +140,15 @@ body {
     flex-grow: 1;
     border-radius: .3rem 0 0 .3rem;
     background-color: rgb(255, 255, 255);
+    padding: .5rem .75rem;
+    border: none;
 }
 
 #wrap>header form button {
     border-radius: 0 .3rem .3rem 0;
     background-color: rgb(255, 255, 255);
-    padding-left: .25rem;
-    padding-right: .25rem;
+    padding: .5rem .25rem;
+    border: none;
 }
 
 #wrap>header form button:hover {
@@ -176,7 +181,7 @@ body {
     color: rgb(255, 165, 0);
 }
 
-/* Link de Início */
+/* Link de Início (home) */
 #wrap>nav a:first-child {
     margin-right: auto;
 }
@@ -312,12 +317,11 @@ body {
 
 }
 
-
 /********************************
  ***** Estilos de uso geral *****
  ********************************/
 
- .center {
+.center {
     text-align: center;
 }
 
