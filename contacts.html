@@ -8,6 +8,9 @@
     <!-- Carrega o CSS do tema do site -->
     <link rel="stylesheet" href="/css/template.css">
 
+    <!-- CSS específico desta página -->
+    <link rel="stylesheet" href="/css/contacts.css">
+
     <!-- Define o ícone de favoritos -->
     <link rel="shortcut icon" href="/images/logo.png">
 
@@ -43,9 +46,9 @@
         </header>
 
         <nav>
-            <a href="/" title="Ir para a página inicial">
-                <i class="fa-solid fa-house fa-fw"></i>
-                <span>Início</span>
+            <a href="/_template.html" title="Ir para a página inicial">
+               <i class="fa-solid fa-arrow-left-long"></i>
+                <span>Voltar</span>
             </a>
             <a href="/contacts.html" title="Ir para Faça Contato">
                 <i class="fa-solid fa-comments fa-fw"></i>
@@ -65,27 +68,64 @@
 
             <article>
 
-                <h2>Título do artigo</h2>
+                <h2>Faça Contato</h2>
+                <p>Preencha os campos abaixo para entrar em contato com a equipe <strong>PyBlog</strong>.</p>
+                <p class="center red">Todos os campos obrigatórios.</p>
 
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit odit, sint assumenda dolor quis,
-                    nulla eligendi, accusantium earum corporis modi facilis distinctio nisi tempore quidem sequi
-                    asperiores consequatur suscipit non.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus alias reiciendis adipisci facilis
-                    pariatur quod molestiae officia distinctio? Fugiat deserunt dicta eveniet praesentium ullam odit,
-                    tempore minus dignissimos quibusdam provident.</p>
-                <img src="https://picsum.photos/200/200" alt="Imagem aleatória">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus repellat, odio aut magnam
-                    incidunt totam voluptatum reiciendis, laborum nisi modi vero illo quos impedit nihil quaerat
-                    voluptate possimus ipsum laudantium.</p>
+                <form action="contacts.html#" method="post">
+
+                    <p>
+                        <label for="fieldName">Seu nome:</label>
+                        <input type="text" name="name" id="fieldName" required minlength="3">
+                    </p>
+
+                    <p>
+                        <label for="fieldEmail">Seu e-mail:</label>
+                        <input type="email" name="email" id="fieldEmail" required>
+                    </p>
+
+                    <p>
+                        <label for="fieldSubject">Assunto:</label>
+                        <input type="text" name="subject" id="fieldSubject" required minlength="5">
+                    </p>
+
+                    <p>
+                        <label for="fieldMessage">Mensagem:</label>
+                        <textarea name="message" id="fieldMessage" required minlength="5"></textarea>
+                    </p>
+
+                    <p>
+                        <button type="submit">Enviar</button>
+                        <small>&larr; Clique somente uma vez</small>
+                    </p>
+
+                </form>
 
             </article>
 
             <aside>
 
-                <h3>Veja também</h3>
+                <h3><i class="fa-solid fa-plus"></i> Contatos</h3>
 
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                <p>Repellendus asperiores aut voluptas architecto consequuntur.</p>
+                <p>Acesse nossas redes sociais para saber mais sobre o <strong>PyBlog</strong>.</p>
+
+                <div>
+                    <a href="https://facebook.com/pyblog" target="_blank">
+                        <i class="fa-brands fa-facebook fa-fw fa-3x" style="color: #1877f2"></i>
+                    </a>
+
+                    <a href="https://linkedin.com/Pyblog" target="_blank">
+                        <i class="fa-brands fa-linkedin-in fa-fw fa-3x" style="color: #b24020"></i>
+                    </a>
+
+                    <a href="https://youtube.com/PyBlog" target="_blank">
+                        <i class="fa-brands fa-youtube fa-fw fa-3x" style="color: #ff0000;"></i>
+                    </a>
+
+                    <a href="https://github.com/PyBlog" target="_blank">
+                        <i class="fa-brands fa-github fa-fw fa-3x" style="color: #6e5494;"></i>
+                    </a>
+                </div>
 
             </aside>
 

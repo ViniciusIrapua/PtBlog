@@ -176,34 +176,32 @@ body {
 #wrap>nav {
     background-color: rgba(0, 0, 0, .9);
     display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 9rem;
-    z-index: 1000;
-    width: 220px;
+    align-items: center;
+    justify-content: flex-end;
 }
 
 #wrap>nav a {
     color: rgb(255, 255, 255);
     text-decoration: none;
     display: flex;
-    /* align-items: center; */
-    padding: 1rem;
+    flex-direction: column;
+    align-items: center;
+    padding: .7rem;
     transition: .2s;
-    border-bottom: 1px dotted grey;
-}
-
-#wrap>nav a:last-child {
-    border-bottom: none;
 }
 
 #wrap>nav a:hover {
     color: rgb(255, 165, 0);
 }
 
+/* Link de Início (home) */
+#wrap>nav a:first-child {
+    margin-right: auto;
+}
+
 #wrap>nav i {
-    font-size: 1.2rem;
-    margin-right: .5rem;
+    font-size: 2rem;
+    margin-bottom: .5rem;
 }
 
 #wrap>nav span {
@@ -299,38 +297,23 @@ body {
  ***** Usando Media Queries             *****
  ********************************************/
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 575px) {
 
-    /* Altera o cabeçalho */
+    /* altera o cabeçalho */
     #wrap>header {
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
     }
 
-    #wrap>nav {
-        flex-direction: row;
-        justify-content: flex-end;
-        position: initial;
-        width: auto;
-    }
-
+    /* Altera o menu */
     #wrap>nav a {
-        color: rgb(255, 255, 255);
-        text-decoration: none;
-        display: flex;
-        padding: 1rem;
-        transition: .2s;
-        border-bottom: 1px dotted grey;
+        flex-direction: row;
     }
 
-    #wrap>nav a:first-child {
-        margin-right: auto;
-    }
-
-    #toggleMenu,
-    #menuSmoke {
-        display: none;
+    #wrap>nav a i {
+        font-size: 1.2rem;
+        margin: 0 .35rem 0 0;
     }
 }
 
@@ -357,14 +340,4 @@ body {
 
 .red {
     color: red;
-}
-
-
-#menuSmoke {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, .5);
-    top: 9rem;
-    z-index: 100;
 }
